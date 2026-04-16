@@ -5,12 +5,12 @@ export function TrustSection() {
   return (
     <section
       id="trust"
-      className="scroll-mt-36 py-16 sm:scroll-mt-40 sm:py-20"
+      className="scroll-mt-36 bg-gradient-to-b from-wash-sky/50 to-surface-elevated py-16 sm:scroll-mt-40 sm:py-20"
       aria-label="Trust and safety"
     >
       <Container>
         <Reveal>
-          <div className="rounded-lg border border-border-soft bg-surface-elevated p-8 shadow-sm sm:p-10">
+          <div className="rounded-lg border border-sky/25 bg-surface-elevated/95 p-8 shadow-soft ring-1 ring-pop-pink/10 sm:p-10">
             <h2 className="font-display text-2xl font-semibold text-ink sm:text-3xl">
               Trust, without the hospital vibe.
             </h2>

@@ -5,7 +5,7 @@ export function ProblemSection() {
   return (
     <section
       id="why"
-      className="scroll-mt-24 py-16 sm:py-24"
+      className="scroll-mt-24 bg-gradient-to-b from-wash-blush/90 via-surface-elevated to-wash-sky/40 py-16 sm:py-24"
       aria-labelledby="why-heading"
     >
       <Container>

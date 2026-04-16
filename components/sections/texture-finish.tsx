@@ -5,7 +5,7 @@ export function TextureFinishSection() {
   return (
     <section
       id="texture"
-      className="scroll-mt-36 border-y border-border-soft bg-surface-elevated py-16 sm:scroll-mt-40 sm:py-24"
+      className="scroll-mt-36 border-y border-sky/20 bg-gradient-to-b from-surface-elevated via-wash-sky/35 to-peach/15 py-16 sm:scroll-mt-40 sm:py-24"
     >
       <Container>
         <div className="grid gap-12 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
@@ -19,7 +19,7 @@ export function TextureFinishSection() {
               ready for concealer, blush, or nothing at all.
             </p>
             <dl className="mt-10 grid gap-6 sm:grid-cols-2">
-              <div className="rounded-lg bg-surface-mist/80 p-5">
+              <div className="rounded-lg border border-pop-pink/10 bg-surface-elevated/90 p-5 shadow-sm ring-1 ring-sky/15">
                 <dt className="text-xs font-semibold uppercase tracking-wider text-brand-deep">
                   Texture
                 </dt>
@@ -27,7 +27,7 @@ export function TextureFinishSection() {
                   Bouncy-lotion glide → fast absorption
                 </dd>
               </div>
-              <div className="rounded-lg bg-surface-mist/80 p-5">
+              <div className="rounded-lg border border-pop-pink/10 bg-surface-elevated/90 p-5 shadow-sm ring-1 ring-sky/15">
                 <dt className="text-xs font-semibold uppercase tracking-wider text-brand-deep">
                   Finish
                 </dt>
@@ -35,7 +35,7 @@ export function TextureFinishSection() {
                   Natural radiance, not disco-ball glitter
                 </dd>
               </div>
-              <div className="rounded-lg bg-surface-mist/80 p-5">
+              <div className="rounded-lg border border-pop-pink/10 bg-surface-elevated/90 p-5 shadow-sm ring-1 ring-sky/15">
                 <dt className="text-xs font-semibold uppercase tracking-wider text-brand-deep">
                   Wear test
                 </dt>
@@ -43,7 +43,7 @@ export function TextureFinishSection() {
                   Commute, college, creator days, AC offices
                 </dd>
               </div>
-              <div className="rounded-lg bg-surface-mist/80 p-5">
+              <div className="rounded-lg border border-pop-pink/10 bg-surface-elevated/90 p-5 shadow-sm ring-1 ring-sky/15">
                 <dt className="text-xs font-semibold uppercase tracking-wider text-brand-deep">
                   Skin types
                 </dt>

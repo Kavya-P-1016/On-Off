@@ -24,7 +24,7 @@ export function BenefitsSection() {
   return (
     <section
       id="benefits"
-      className="scroll-mt-36 py-16 sm:scroll-mt-40 sm:py-24"
+      className="scroll-mt-36 bg-gradient-to-b from-wash-lilac/50 via-surface-elevated to-wash-mint/40 py-16 sm:scroll-mt-40 sm:py-24"
       aria-labelledby="benefits-heading"
     >
       <Container>
@@ -39,7 +39,7 @@ export function BenefitsSection() {
         <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
           {cards.map((c, i) => (
             <Reveal key={c.title} delay={0.04 * i}>
-              <article className="group h-full rounded-lg border border-border-soft bg-surface-elevated p-6 shadow-sm transition-shadow duration-300 hover:shadow-soft">
+              <article className="group h-full rounded-lg border border-sky/25 bg-surface-elevated/95 p-6 shadow-sm ring-1 ring-pop-pink/10 transition-shadow duration-300 hover:border-pop-pink/25 hover:shadow-soft">
                 <h3 className="font-display text-lg font-semibold text-ink">
                   {c.title}
                 </h3>

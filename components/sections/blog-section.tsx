@@ -93,7 +93,7 @@ function BlogCard({
           </p>
           <a
             href={href}
-            className="inline-flex items-center gap-1 rounded-pill bg-cta px-4 py-2 text-xs font-semibold text-surface-elevated transition-colors hover:bg-cta-hover"
+            className="inline-flex items-center gap-1 rounded-pill bg-gradient-to-r from-pop-rose via-pop-pink to-pop-coral px-4 py-2 text-xs font-semibold text-white shadow-sm transition-[filter] hover:brightness-105"
           >
             Read more
             <span aria-hidden>›</span>
@@ -130,7 +130,7 @@ export function BlogSection() {
   return (
     <section
       id="blog"
-      className="scroll-mt-36 border-t border-border-soft bg-surface py-16 sm:scroll-mt-40 sm:py-24"
+      className="scroll-mt-36 border-t border-pop-pink/15 bg-gradient-to-b from-wash-sky/40 via-surface to-wash-lemon/30 py-16 sm:scroll-mt-40 sm:py-24"
       aria-labelledby="blog-heading"
     >
       <Container>

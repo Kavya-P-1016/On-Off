@@ -3,10 +3,10 @@ import { cn } from "@/lib/cn";
 
 const variants = {
   primary:
-    "bg-cta text-surface-elevated shadow-soft hover:bg-cta-hover hover:shadow-hover active:scale-[0.98]",
+    "bg-gradient-to-r from-pop-rose via-pop-pink to-pop-coral text-white shadow-soft [text-shadow:0_1px_0_rgb(0_0_0_/0.12)] hover:brightness-105 hover:shadow-hover active:scale-[0.98]",
   secondary:
-    "bg-surface-elevated text-ink border border-border hover:border-brand hover:text-brand-deep shadow-sm active:scale-[0.98]",
-  ghost: "text-ink-muted hover:text-ink hover:bg-surface-mist",
+    "border-2 border-sky bg-wash-sky/70 text-brand-deep shadow-sm hover:border-brand hover:bg-sky-soft/50 hover:text-brand-deep active:scale-[0.98]",
+  ghost: "text-ink-muted hover:text-ink hover:bg-wash-mint/80",
 } as const;
 
 type Variant = keyof typeof variants;

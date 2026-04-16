@@ -11,7 +11,7 @@ export function ProductSpotlight({ config }: { config: SiteConfig }) {
   return (
     <section
       id="product"
-      className="scroll-mt-20 border-y border-border-soft bg-surface-mist/50 py-16 sm:py-24"
+      className="scroll-mt-20 border-y border-pop-pink/10 bg-gradient-to-br from-wash-mint/80 via-surface-elevated to-peach/25 py-16 sm:py-24"
       aria-labelledby="product-heading"
     >
       <Container>
@@ -21,7 +21,7 @@ export function ProductSpotlight({ config }: { config: SiteConfig }) {
           </Reveal>
           <div className="order-1 lg:order-2">
             <Reveal>
-              <p className="text-xs font-semibold uppercase tracking-[0.2em] text-brand-deep">
+              <p className="text-xs font-semibold uppercase tracking-[0.2em] text-transparent bg-gradient-to-r from-brand-deep to-pop-rose bg-clip-text">
                 Hero product
               </p>
             </Reveal>

@@ -23,7 +23,7 @@ export function HowToUseSection() {
   return (
     <section
       id="how"
-      className="scroll-mt-36 py-16 sm:scroll-mt-40 sm:py-24"
+      className="scroll-mt-36 bg-gradient-to-b from-peach/20 via-surface-elevated to-wash-mint/35 py-16 sm:scroll-mt-40 sm:py-24"
       aria-labelledby="how-heading"
     >
       <Container>
@@ -38,7 +38,7 @@ export function HowToUseSection() {
         <ol className="mt-12 grid gap-6 lg:grid-cols-3">
           {steps.map((s, i) => (
             <Reveal key={s.n} delay={0.06 * i}>
-              <li className="relative rounded-lg border border-border-soft bg-surface-elevated p-6 shadow-sm">
+              <li className="relative rounded-lg border border-sky/20 bg-surface-elevated/95 p-6 shadow-sm ring-1 ring-sun/15">
                 <span className="font-display text-xs font-bold text-brand-deep">
                   {s.n}
                 </span>

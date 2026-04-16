@@ -179,7 +179,7 @@ export function TestimonialsSection() {
   return (
     <section
       id="reviews"
-      className="scroll-mt-20 border-t border-border-soft bg-surface-mist/30 py-16 sm:py-24"
+      className="scroll-mt-20 border-t border-pop-pink/15 bg-gradient-to-b from-wash-lemon/70 via-surface-elevated to-lilac-soft/40 py-16 sm:py-24"
       aria-labelledby="reviews-heading"
     >
       <Container>

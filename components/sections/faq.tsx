@@ -24,7 +24,7 @@ export function FaqSection() {
   return (
     <section
       id="faq"
-      className="scroll-mt-20 border-t border-border-soft bg-surface-elevated py-16 sm:py-24"
+      className="scroll-mt-20 border-t border-pop-pink/15 bg-gradient-to-b from-surface-elevated via-wash-blush/25 to-wash-sky/30 py-16 sm:py-24"
       aria-labelledby="faq-heading"
     >
       <Container>
@@ -36,7 +36,7 @@ export function FaqSection() {
             FAQ: quick, honest answers.
           </h2>
         </Reveal>
-        <div className="mt-10 divide-y divide-border-soft rounded-lg border border-border-soft bg-surface">
+        <div className="mt-10 divide-y divide-border-soft rounded-lg border border-sky/25 bg-surface-elevated/95 shadow-sm ring-1 ring-pop-pink/10">
           {faqs.map((item, i) => (
             <Reveal key={item.q} delay={0.04 * i}>
               <details className="group px-5 py-4 sm:px-6 sm:py-5">

@@ -37,7 +37,7 @@ export function StickyMobileCta({ config }: { config: SiteConfig }) {
 
   return (
     <div
-      className="fixed inset-x-0 bottom-0 z-50 border-t border-border-soft bg-surface/95 p-3 pb-[max(0.75rem,env(safe-area-inset-bottom))] backdrop-blur-md md:hidden"
+      className="fixed inset-x-0 bottom-0 z-50 border-t-2 border-pop-pink/25 bg-surface-elevated/95 p-3 pb-[max(0.75rem,env(safe-area-inset-bottom))] shadow-[0_-8px_30px_-10px_rgb(236_72_153_/0.18)] backdrop-blur-md md:hidden"
       role="region"
       aria-label="Quick actions"
     >

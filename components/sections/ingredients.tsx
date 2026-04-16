@@ -20,13 +20,13 @@ export function IngredientsSection() {
   return (
     <section
       id="formula"
-      className="scroll-mt-20 py-16 sm:py-24"
+      className="scroll-mt-20 bg-gradient-to-b from-wash-mint/60 via-surface to-wash-blush/30 py-16 sm:py-24"
       aria-labelledby="formula-heading"
     >
       <Container>
         <div className="flex flex-col gap-10 lg:flex-row lg:items-end lg:justify-between">
           <Reveal className="max-w-2xl">
-            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-brand-deep">
+            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-transparent bg-gradient-to-r from-brand-deep to-pop-pink bg-clip-text">
               Formula philosophy
             </p>
             <h2
@@ -53,7 +53,7 @@ export function IngredientsSection() {
         <div className="mt-12 grid gap-5 lg:grid-cols-3">
           {highlights.map((h, i) => (
             <Reveal key={h.name} delay={0.05 * i}>
-              <article className="relative overflow-hidden rounded-lg border border-border-soft bg-surface-mist/40 p-6">
+              <article className="relative overflow-hidden rounded-lg border border-lilac/20 bg-surface-elevated/95 p-6 shadow-sm ring-1 ring-sun/15">
                 <div className="pointer-events-none absolute -right-8 -top-8 h-24 w-24 rounded-full bg-brand/20 blur-2xl" />
                 <h3 className="font-display text-lg font-semibold text-ink">
                   {h.name}

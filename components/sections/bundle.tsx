@@ -7,7 +7,7 @@ export function BundleSection({ config }: { config: SiteConfig }) {
   return (
     <section
       id="routine"
-      className="scroll-mt-36 border-y border-border-soft bg-surface-elevated py-16 sm:scroll-mt-40 sm:py-24"
+      className="scroll-mt-36 border-y border-lilac/20 bg-gradient-to-br from-wash-lilac/40 via-surface-elevated to-sun-soft/30 py-16 sm:scroll-mt-40 sm:py-24"
     >
       <Container>
         <div className="grid gap-10 lg:grid-cols-2 lg:items-center">
@@ -21,19 +21,19 @@ export function BundleSection({ config }: { config: SiteConfig }) {
               built to grow with you.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
-              <span className="rounded-pill border border-border bg-surface-mist px-4 py-2 text-xs font-semibold text-ink-muted">
+              <span className="rounded-pill border border-pop-pink/25 bg-wash-blush/80 px-4 py-2 text-xs font-semibold text-ink-muted">
                 SPF (hero)
               </span>
-              <span className="rounded-pill border border-border bg-surface-mist px-4 py-2 text-xs font-semibold text-ink-muted">
+              <span className="rounded-pill border border-pop-pink/25 bg-wash-blush/80 px-4 py-2 text-xs font-semibold text-ink-muted">
                 Cleanser (next)
               </span>
-              <span className="rounded-pill border border-border bg-surface-mist px-4 py-2 text-xs font-semibold text-ink-muted">
+              <span className="rounded-pill border border-pop-pink/25 bg-wash-blush/80 px-4 py-2 text-xs font-semibold text-ink-muted">
                 Lip care (later)
               </span>
             </div>
           </Reveal>
           <Reveal delay={0.08}>
-            <div className="rounded-lg bg-gradient-to-br from-surface-mist via-white to-sky-soft/30 p-8 shadow-soft ring-1 ring-border-soft">
+            <div className="rounded-lg bg-gradient-to-br from-wash-mint/80 via-white to-peach/25 p-8 shadow-soft ring-1 ring-sky/25">
               <p className="text-sm font-medium text-ink">
                 Routine card: pair SPF with minimal steps for oily skin.
               </p>

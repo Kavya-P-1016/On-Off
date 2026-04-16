@@ -109,7 +109,7 @@ function HeaderSearch({ className }: { className?: string }) {
       role="search"
       onSubmit={onSubmit}
       className={cn(
-        "flex min-w-0 flex-1 items-center rounded-pill border border-border bg-surface px-3 py-2 shadow-sm focus-within:border-brand-deep focus-within:ring-2 focus-within:ring-brand/20",
+        "flex min-w-0 flex-1 items-center rounded-pill border border-sky/35 bg-surface-elevated/90 px-3 py-2 shadow-sm focus-within:border-pop-pink/50 focus-within:ring-2 focus-within:ring-pop-pink/25",
         className,
       )}
     >
@@ -141,7 +141,7 @@ function UtilityLink({
   return (
     <a
       href={href}
-      className="flex h-10 w-10 min-h-10 min-w-10 touch-manipulation items-center justify-center rounded-md text-ink transition-colors hover:bg-surface-mist hover:text-brand-deep active:bg-surface-mist"
+      className="flex h-10 w-10 min-h-10 min-w-10 touch-manipulation items-center justify-center rounded-md text-ink transition-colors hover:bg-wash-mint/90 hover:text-brand-deep active:bg-wash-sky/50"
       aria-label={label}
     >
       {children}
@@ -251,7 +251,7 @@ export function SiteHeader({ config }: { config: SiteConfig }) {
   }, [mobileOpen]);
 
   return (
-    <header className="sticky top-0 z-50 border-b border-border-soft bg-surface-elevated/95 shadow-sm backdrop-blur-md">
+    <header className="sticky top-0 z-50 border-b border-pop-pink/15 bg-surface-elevated/92 shadow-sm shadow-pop-pink/5 backdrop-blur-md">
       {/* Full-bleed row: logo flush-left, search flexes, utilities flush-right (no max-w-6xl) */}
       <div className="flex w-full items-center gap-3 px-4 py-3 sm:gap-4 sm:px-6 sm:py-3.5 lg:px-8">
         <Link
@@ -274,7 +274,7 @@ export function SiteHeader({ config }: { config: SiteConfig }) {
           <UtilityLink href={ROUTES.cart} label="Shopping bag">
             <span className="relative inline-flex">
               <IconBag />
-              <span className="absolute -right-1 -top-1 flex h-4 min-w-4 items-center justify-center rounded-full bg-brand px-1 text-[9px] font-bold text-surface-elevated">
+              <span className="absolute -right-1 -top-1 flex h-4 min-w-4 items-center justify-center rounded-full bg-pop-pink px-1 text-[9px] font-bold text-white shadow-sm">
                 0
               </span>
             </span>
@@ -305,7 +305,7 @@ export function SiteHeader({ config }: { config: SiteConfig }) {
       <MobileCatalogStrip onNavigate={() => setMobileOpen(false)} />
 
       {/* Row 2: catalog nav (desktop), CSS flyouts */}
-      <div className="hidden border-t border-border-soft bg-surface md:block">
+      <div className="hidden border-t border-sky/20 bg-gradient-to-r from-wash-mint/90 via-surface-elevated to-wash-sky/80 md:block">
         <div className="flex w-full justify-center px-4 py-2 sm:px-6 lg:px-8">
           <nav
             className="flex flex-wrap items-center justify-center gap-x-2 gap-y-1 lg:gap-x-4"

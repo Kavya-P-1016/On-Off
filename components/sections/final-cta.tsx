@@ -9,7 +9,7 @@ export function FinalCtaSection({ config }: { config: SiteConfig }) {
   return (
     <section
       id="cta"
-      className="scroll-mt-20 bg-gradient-to-b from-surface-mist/60 to-surface py-16 sm:py-24"
+      className="scroll-mt-20 bg-gradient-to-b from-pop-pink/15 via-wash-sky/80 to-sun-soft/35 py-16 sm:py-24"
       aria-labelledby="final-cta-heading"
     >
       <Container>
