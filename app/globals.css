@@ -1,0 +1,95 @@
+@import "tailwindcss";
+
+:root {
+  --color-surface: #fafcfd;
+  --color-surface-elevated: #ffffff;
+  --color-surface-mist: #e8f4f7;
+  --color-surface-mist-strong: #d4eef2;
+  --color-ink: #0f1f24;
+  --color-ink-muted: #3d5a66;
+  --color-ink-subtle: #6b8793;
+  --color-brand: #2cb8b4;
+  --color-brand-deep: #1b9a96;
+  --color-brand-glow: #5ee4df;
+  --color-sky: #7ec4e8;
+  --color-sky-soft: #b8ddf5;
+  --color-accent-warm: #e8b4a8;
+  --color-cta: #0f2a32;
+  --color-cta-hover: #1a3d48;
+  --color-border: #c8d4d8;
+  --color-border-soft: #e2eaed;
+  --radius-sm: 0.5rem;
+  --radius-md: 0.875rem;
+  --radius-lg: 1.375rem;
+  --radius-pill: 9999px;
+  --shadow-soft: 0 20px 60px -28px rgb(15 31 36 / 0.22);
+  --shadow-hover: 0 28px 70px -30px rgb(15 31 36 / 0.28);
+  --motion-ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --motion-duration: 0.55s;
+}
+
+@theme inline {
+  --color-surface: var(--color-surface);
+  --color-surface-elevated: var(--color-surface-elevated);
+  --color-surface-mist: var(--color-surface-mist);
+  --color-surface-mist-strong: var(--color-surface-mist-strong);
+  --color-ink: var(--color-ink);
+  --color-ink-muted: var(--color-ink-muted);
+  --color-ink-subtle: var(--color-ink-subtle);
+  --color-brand: var(--color-brand);
+  --color-brand-deep: var(--color-brand-deep);
+  --color-brand-glow: var(--color-brand-glow);
+  --color-sky: var(--color-sky);
+  --color-sky-soft: var(--color-sky-soft);
+  --color-accent-warm: var(--color-accent-warm);
+  --color-cta: var(--color-cta);
+  --color-cta-hover: var(--color-cta-hover);
+  --color-border: var(--color-border);
+  --color-border-soft: var(--color-border-soft);
+  --font-sans: var(--font-dm-sans), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-sora), var(--font-dm-sans), ui-sans-serif, system-ui,
+    sans-serif;
+  --radius-sm: var(--radius-sm);
+  --radius-md: var(--radius-md);
+  --radius-lg: var(--radius-lg);
+  --radius-pill: 9999px;
+  --shadow-soft: var(--shadow-soft);
+  --shadow-hover: var(--shadow-hover);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+body {
+  background: var(--color-surface);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+
+/* Focus visibility for keyboard users */
+:focus-visible {
+  outline: 2px solid var(--color-brand-deep);
+  outline-offset: 3px;
+}
+
+/*
+ * Next.js dev-only: <nextjs-portal> is injected by the framework (route indicator /
+ * error overlay), not by app components. Browser-preview tweaks that clear inline
+ * left/top are persisted here so the portal does not sit at 0,0 in some tools.
+ * No effect in production builds where this node is absent.
+ */
+nextjs-portal.dark {
+  left: unset;
+  top: unset;
+}
