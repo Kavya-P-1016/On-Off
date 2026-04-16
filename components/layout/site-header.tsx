@@ -6,7 +6,7 @@ import { Container } from "@/components/ui/container";
 import { ButtonLink } from "@/components/ui/button";
 import type { SiteConfig } from "@/lib/site-config";
 import { catalogNav, catalogNavSimple, type NavColumn } from "@/lib/site-nav";
-import { homeSection } from "@/lib/routes";
+import { ROUTES, homeSection } from "@/lib/routes";
 import { cn } from "@/lib/cn";
 
 const navTriggerClass =
@@ -268,10 +268,10 @@ export function SiteHeader({ config }: { config: SiteConfig }) {
         <HeaderSearch className="mx-3 hidden min-w-0 flex-1 md:flex lg:mx-8" />
 
         <div className="flex shrink-0 items-center gap-0.5 sm:gap-1">
-          <UtilityLink href={homeSection("footer-support")} label="Track order">
+          <UtilityLink href={ROUTES.track} label="Track order">
             <IconTruck />
           </UtilityLink>
-          <UtilityLink href={homeSection("product")} label="Shopping bag">
+          <UtilityLink href={ROUTES.cart} label="Shopping bag">
             <span className="relative inline-flex">
               <IconBag />
               <span className="absolute -right-1 -top-1 flex h-4 min-w-4 items-center justify-center rounded-full bg-brand px-1 text-[9px] font-bold text-surface-elevated">

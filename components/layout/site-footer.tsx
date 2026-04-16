@@ -5,7 +5,7 @@ import { catalogNavSimple } from "@/lib/site-nav";
 import { ROUTES, homeSection } from "@/lib/routes";
 
 const helpLinks = [
-  { label: "Track order", href: homeSection("footer-support") },
+  { label: "Track order", href: ROUTES.track },
   { label: "Shipping & delivery", href: homeSection("faq") },
   { label: "Returns", href: homeSection("faq") },
   { label: "Contact us", href: "mailto:hello@onandoff.in" },
